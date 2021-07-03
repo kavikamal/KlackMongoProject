@@ -79,7 +79,10 @@ h1 {
 
 #messageslist {
   height: calc(100% - 203px);
+  width: 78vw;
   overflow-y: scroll;
+  overflow-wrap: break-word;
+  /* word-wrap: break-word; */
 }
 
 #messageheader {
@@ -202,7 +205,11 @@ svg:not(#faces):not(#animals):not(#food):not(#sport):not(#transport):not(#object
     margin-bottom: 10px;
   }
   #messageslist {
+    width: 100%;
     word-wrap: break-word;
+  }
+  .mobileImg {
+    width: 95%;
   }
   /* No emoji option for mobile. */
   svg:not(#faces):not(#animals):not(#food):not(#sport):not(#transport):not(#objects) {
